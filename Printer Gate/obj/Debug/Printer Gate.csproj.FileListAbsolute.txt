@@ -1,0 +1,47 @@
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\Printer Gate.exe.config
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\Printer Gate.exe
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\Printer Gate.pdb
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.dll
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\Newtonsoft.Json.dll
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.pdb
+E:\work\PrintGate\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.xml
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.AddPrinterForm.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.AlarmSelection.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.MainForm.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.MainFormAdvanced.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.OrderItem.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.OrdersTable.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.Properties.Resources.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.SettingsForm.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.TicketItem.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.TicketItem1.resources
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.GenerateResource.cache
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.CoreCompileInputs.cache
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.CopyComplete
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.exe
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.pdb
+E:\work\PrintGate\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csprojAssemblyReference.cache
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\Printer Gate.exe.config
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\Printer Gate.exe
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\Printer Gate.pdb
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.dll
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\Newtonsoft.Json.dll
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.pdb
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\bin\Debug\HtmlAgilityPack.xml
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.AssemblyReference.cache
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.AddPrinterForm.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.AlarmSelection.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.MainForm.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.MainFormAdvanced.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.OrderItem.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.OrdersTable.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.Properties.Resources.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.SettingsForm.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.TicketItem.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.TicketItem1.resources
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.GenerateResource.cache
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.CoreCompileInputs.cache
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.csproj.CopyComplete
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.exe
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\Printer Gate.pdb
+E:\work\PrintGate\Work\Printer Gate\Printer Gate\obj\Debug\PrinterGateXP.CustomPrinter.resources

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD88E494-D8F0-47B4-AE08-03FF6ACFB09D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrinterGateXP</RootNamespace>
+    <AssemblyName>Printer Gate</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Printer Gate.ico</ApplicationIcon>
+    <StartupObject>PrinterGateXP.Program</StartupObject>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.46.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.46\lib\Net35\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files (x86)\Printer Gate\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPrinterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPrinterForm.Designer.cs">
+      <DependentUpon>AddPrinterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlarmType.cs" />
+    <Compile Include="Api.cs" />
+    <Compile Include="ApiData.cs" />
+    <Compile Include="ApiResponse.cs" />
+    <Compile Include="AppColor.cs" />
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="ArrayUtils.cs" />
+    <Compile Include="BalloonTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalloonTip.Designer.cs">
+      <DependentUpon>BalloonTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consts.cs" />
+    <Compile Include="CustomPrinter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gate.cs" />
+    <Compile Include="GatePrinter.cs" />
+    <Compile Include="GateUrl.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormAdvanced.Designer.cs">
+      <DependentUpon>MainFormAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="OrderType.cs" />
+    <Compile Include="PrintApiResponse.cs" />
+    <Compile Include="PrinterUtils.cs" />
+    <Compile Include="PrintOutput.cs" />
+    <Compile Include="PrintStatus.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs" />
+    <Compile Include="PromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromptForm.Designer.cs">
+      <DependentUpon>PromptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RestaurantOrder.cs" />
+    <Compile Include="RestaurantOrderCustomF.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpinningCircles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StringUtils.cs" />
+    <Compile Include="TakeAwayOrder.cs" />
+    <Compile Include="TakeAwayOrderCustomF.cs" />
+    <Compile Include="TakeAwayItem.cs" />
+    <Compile Include="TicketItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketItem.Designer.cs">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketItem1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketItem1.Designer.cs">
+      <DependentUpon>TicketItem1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketTable.cs" />
+    <Compile Include="TKMenu.cs" />
+    <Compile Include="UrlUtil.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="localization.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\close-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\exclaim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\hide-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\lang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\maximize-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\printer-gate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\reject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\restore-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\stress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\appIcon.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\NotifyIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPrinterForm.resx">
+      <DependentUpon>AddPrinterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmSelection.resx">
+      <DependentUpon>AlarmSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPrinter.resx">
+      <DependentUpon>CustomPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormAdvanced.resx">
+      <DependentUpon>MainFormAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersTable.resx">
+      <DependentUpon>OrdersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketItem.resx">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketItem1.resx">
+      <DependentUpon>TicketItem1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\buttonSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\print1.png" />
+    <Content Include="res\print2.png" />
+    <None Include="res\sort.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)localization.json" "$(ProjectDir)$(OutDir)localization.json"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

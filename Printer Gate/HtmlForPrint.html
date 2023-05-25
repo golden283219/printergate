@@ -1,0 +1,282 @@
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://test.waage-flamatt.ch/administrator/components/com_vikrestaurants/assets/css/vikrestaurants.css"
+        rel="stylesheet" />
+    <style>
+        /*        @page {
+            margin: 6mm 3mm;
+        }
+        @media print {
+            body {
+                margin: 6mm 3mm;
+            }
+	}*/
+
+        body.contentpane {
+            /*     margin: 6mm 3mm;  */
+            padding: 6mm 6mm;
+        }
+
+        .tk-print-box {
+            border: none;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        .tk-item {
+            padding: 0;
+            border: none;
+        }
+
+        .tk-print-box .tk-field .tk-label {
+            width: auto;
+        }
+
+        .tk-item .tk-details .name {
+            width: 60%;
+        }
+
+        .tk-item .tk-details .quantity {
+            width: 30%;
+        }
+
+        .tk-item .tk-details .price {
+            width: 100%;
+        }
+
+        .tk-value,
+        .tk-label,
+        .tk-details,
+        .tk-amount,
+        .tk-field {
+            font-size: 16px;
+            font-family: Arial;
+            color: black;
+            font-weight: 600;
+        }
+
+        .qr-wrapper {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        body.contentpane {
+            /*            width: 148mm;
+            height: 105mm;
+			box-sizing: border-box;
+			margin: 8mm 8mm;*/
+            width: 100%;
+            padding: 8mm 8mm;
+        }
+
+        .beauti-field {
+            font-size: 25px;
+        }
+
+        .beauti-small {
+            font-size: 18px;
+        }
+
+        .beauti-field img {
+            margin: 0 20%;
+            width: 60%;
+        }
+
+        .beauti-center {
+            text-align: center;
+        }
+
+        .beauti-bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="contentpane component takeaway">
+    <div class="vr-printer-layout">
+
+        <!--	-->
+        <!--		<div class="vr-printer-header">-->
+        <!--</div>-->
+        <!--	-->
+        <!-- HEAD -->
+        <div class="tk-print-box">
+            <div class="tk-field">
+                <span class="tk-label">Bestellnummer:</span>
+                <br>
+                <span class="tk-value">37 - X66T0FBINALORF40</span>
+            </div>
+            <div class="tk-field">
+                <span class="tk-label">Status:</span>
+                <span class="tk-value order-pending">BESTäTIGUNG OFFEN</span>
+            </div>
+            <div class="tk-field">
+                <!--					<span class="tk-label">-->
+                <!--</span>-->
+                <span class="tk-value">12.11.2022 13:00</span>
+            </div>
+            <div class="tk-field">
+                <span class="tk-label">Service:</span>
+                <span class="tk-value">Abholung</span>
+            </div>
+            <!--				-->
+            <!--					<div class="tk-field">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-value">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!--				-->
+            <!--					<div class="tk-field">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-value">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!--				-->
+            <!--					<div class="tk-field">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-value">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+
+            <hr style="border-top: dotted 1px;" />
+
+            <!-- CART -->
+            <div class="tk-item">
+                <div class="tk-details">
+                    <span class="name">Wunschpizza</span>
+                    <span class="quantity">x1</span>
+                    <span class="price">Fr. 13.50</span>
+                </div>
+
+                <div class="tk-toppings-cont">
+                    <div class="tk-toppings-group">
+                        <span class="title">Extras kostenlos:&nbsp;</span>
+                        <span class="toppings">
+                            Knoblauch </span>
+                    </div>
+                    <div class="tk-toppings-group">
+                        <span class="title">Extras Fr. 1.50:&nbsp;</span>
+                        <span class="toppings">
+                            Sardellen </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tk-item">
+                <div class="tk-details">
+                    <span class="name">Pizza Funghi</span>
+                    <span class="quantity">x1</span>
+                    <span class="price">Fr. 15.00</span>
+                </div>
+
+                <div class="tk-toppings-cont">
+                    <div class="tk-toppings-group">
+                        <span class="title">Extras Fr. 3.--:&nbsp;</span>
+                        <span class="toppings">
+                            Büffelmozzarella </span>
+                    </div>
+                </div>
+
+            </div>
+            <hr style="border-top: dotted 1px;" />
+
+            <!-- ORDER TOTAL -->
+            <!--				<div class="tk-total-row">-->
+            <!--					<span class="tk-label">-->
+            <!--</span>-->
+            <!--					<span class="tk-amount">-->
+            <!--</span>-->
+            <!--				</div>-->
+            <!--			-->
+            <!--				-->
+            <!--					<div class="tk-total-row">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-amount">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!--			-->
+            <!--				-->
+            <!--					<div class="tk-total-row">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-amount">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!--			-->
+            <!--				-->
+            <!--					<div class="tk-total-row">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-amount">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!--			-->
+            <!--				-->
+            <!--					<div class="tk-total-row">-->
+            <!--						<span class="tk-label red">-->
+            <!--</span>-->
+            <!--						<span class="tk-amount">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <!---->
+            <!-- TIP -->
+            <!--				-->
+            <!--					<div class="tk-total-row">-->
+            <!--						<span class="tk-label">-->
+            <!--</span>-->
+            <!--						<span class="tk-amount">-->
+            <!--</span>-->
+            <!--					</div>-->
+            <!--				-->
+            <div class="tk-total-row">
+                <span class="tk-label">Gesamtbetrag:</span>
+                <span class="tk-amount">Fr. 28.50</span>
+            </div>
+        </div>
+        <hr style="border-top: dotted 1px;" />
+
+        <!-- CUSTOMER DETAILS -->
+        <div class="tk-field">
+            <span class="tk-value">Christoph Wenger</span>
+        </div>
+        <div class="tk-field">
+            <span class="tk-value">office@weratv.ch</span>
+        </div>
+        <div class="tk-field">
+            <span class="tk-value">+41 079 277 09 09</span>
+        </div>
+
+        <!--					-->
+        <!--							<div class="tk-field">-->
+        <!--								<span class="tk-label">-->
+        <!--</span>-->
+        <!--								<span class="tk-value">-->
+        <!--</span>-->
+        <!--							</div>-->
+        <!--						-->
+        <!--					-->
+
+        <!--	-->
+        <!--		<div class="vr-printer-footer">-->
+        <!--</div>-->
+        <!--	-->
+    </div>
+
+    </div>
+</body>
+
+</html>
