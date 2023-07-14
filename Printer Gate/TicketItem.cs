@@ -144,6 +144,15 @@ namespace PrinterGateXP
                     item_label.Margin = new Padding(1, 1, 0, 1);
                     this.flowLayoutPart2.Controls.Add(item_label);
                     item_label.Click += new System.EventHandler(this.detailPanel_Click);
+
+                    Label notes_label = new Label();
+                    notes_label.Text = order.notes;
+                    notes_label.AutoSize = true;
+                    notes_label.Font = SmallBoldFont;
+                    notes_label.Margin = new Padding(1, 1, 0, 1);
+                    this.flowLayoutPart2.Controls.Add(notes_label);
+                    notes_label.Click += new System.EventHandler(this.detailPanel_Click);
+
                     for (int i = 0; i < takeAwayItem.tk_toppings_cont.Count; i++)
                     {
                         Label extra_label = new Label();

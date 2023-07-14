@@ -25,7 +25,10 @@ namespace PrinterGateXP
 
 		public string address;
 
+		public string notes;
+
 		public TakeAwayItemDetails orderItemDetails;//public string orderInfo;
+
 		public string date_checkin;  //order reservation time - this is timestamp string
 
 		public bool welcomeMessageSent;

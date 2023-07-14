@@ -101,7 +101,6 @@ namespace PrinterGateXP
             this.LoadSettings();
             this.btnMaximize.Image = Resources.restore_up;
             this.gate.Host = this.appConfig.host;
-            //this.gate.Host = "https://test.waage-flamatt.ch";
             if (localServerTest)
                 this.gate.Host = "https://localhost/joomla-site/";
             this.gate.GateInitialized += this.gateInitialized;
@@ -731,15 +730,14 @@ namespace PrinterGateXP
 
         private bool printHtml(string html, string printerName, bool showPrintDialog, bool bBeautiful = false)
         {
-            string strExeFilePath = "";
+
             if (!showPrintDialog && printerName.Length == 0)
             {
                 return false;
             }
-            
-            strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
             strExeFilePath = System.IO.Path.GetDirectoryName(strExeFilePath) + "\\PrintHtml.exe";
-            if (!File.Exists(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\PrintHtml.exe"))
+            if (!File.Exists(strExeFilePath))
                 return false;
             base.BeginInvoke(new MethodInvoker(delegate ()
             {
@@ -787,7 +785,7 @@ namespace PrinterGateXP
                 List<GatePrinter> gatePrinters = this.appConfig.gatePrinters;
                 bool flag = true;
                 List<string[]> list2 = new List<string[]>();
-                foreach (GatePrinter gatePrinter in this.appConfig.gatePrinters)
+                foreach (GatePrinter gatePrinter in gatePrinters)
                 {
                     if (gatePrinter.tkMenuIds.Count != 0 && ArrayUtils.FindIntersection(list, gatePrinter.tkMenuIds))
                     {

@@ -254,7 +254,7 @@ namespace PrinterGateXP
 				printStatus = PrintStatus.Pending,
 				name = restaurantOrderCustomF.CUSTOMF_NAME + " " + restaurantOrderCustomF.CUSTOMF_LNAME,
 				email = restaurantOrderCustomF.CUSTOMF_EMAIL,
-				phone = restaurantOrderCustomF.Telefon,
+				phone = restaurantOrderCustomF.CUSTOMF_PHONE,
 				date = rawOrder.created_on,
 				date_checkin = rawOrder.checkin_ts,
 			};
@@ -275,7 +275,8 @@ namespace PrinterGateXP
 				phone = takeAwayOrderCustomF.CUSTOMF_TKPHONE,
 				zipCode = takeAwayOrderCustomF.CUSTOMF_TKZIP,
 				address = takeAwayOrderCustomF.CUSTOMF_TKADDRESS,
-				date = rawOrder.created_on,
+                notes = rawOrder.notes,
+                date = rawOrder.created_on,
 				date_checkin = rawOrder.checkin_ts,
 
 			};

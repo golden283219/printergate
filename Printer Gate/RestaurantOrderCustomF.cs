@@ -10,6 +10,6 @@ namespace PrinterGateXP
 
 		public string CUSTOMF_EMAIL;
 
-		public string Telefon;
+		public string CUSTOMF_PHONE;
 	}
 }

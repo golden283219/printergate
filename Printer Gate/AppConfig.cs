@@ -176,9 +176,7 @@ namespace PrinterGateXP
 		{
 			//string str = AppConfig.appConfig.host.Substring("https://".Length, AppConfig.appConfig.host.Length - 8);
 			string str = AppConfig.appConfig.host;
-			str = "https://test.waage-flamatt.ch/";
-
-            str = str.Replace("https://", "");
+			str = str.Replace("https://", "");
 			str = str.Replace("/", "");
 			return AppConfig.appDir + "/Printer Gate/" + str + "-printer.json";
 		}

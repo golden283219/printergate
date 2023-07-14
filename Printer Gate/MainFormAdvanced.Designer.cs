@@ -35,19 +35,25 @@
             this.labelTakeAway = new System.Windows.Forms.Label();
             this.labelTakeAwayPrinterWarning = new System.Windows.Forms.Label();
             this.flowLayoutTakeAway = new System.Windows.Forms.FlowLayoutPanel();
-            this.ticketItem9 = new PrinterGateXP.TicketItem();
-            this.ticketItem10 = new PrinterGateXP.TicketItem();
-            this.ticketItem11 = new PrinterGateXP.TicketItem();
-            this.ticketItem12 = new PrinterGateXP.TicketItem();
-            this.ticketItem13 = new PrinterGateXP.TicketItem();
-            this.ticketItem14 = new PrinterGateXP.TicketItem();
-            this.ticketItem15 = new PrinterGateXP.TicketItem();
-            this.ticketItem16 = new PrinterGateXP.TicketItem();
             this.tableLayoutReservation = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutOrdersHeader = new System.Windows.Forms.TableLayoutPanel();
             this.labelReservations = new System.Windows.Forms.Label();
             this.labelReservationPrinterWarning = new System.Windows.Forms.Label();
             this.flowLayoutReservation = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutOrders = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutFooter = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelVersion = new System.Windows.Forms.Label();
+            this.tableLayoutMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutTitleBar = new System.Windows.Forms.TableLayoutPanel();
+            this.appIcon = new System.Windows.Forms.PictureBox();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonSettings = new System.Windows.Forms.Button();
+            this.buttonHideToTray = new System.Windows.Forms.Button();
+            this.labelServerStatus = new System.Windows.Forms.Label();
+            this.buttonSort = new System.Windows.Forms.Button();
+            this.buttonBigClose = new System.Windows.Forms.Button();
             this.ticketItem1 = new PrinterGateXP.TicketItem();
             this.ticketItem2 = new PrinterGateXP.TicketItem();
             this.ticketItem3 = new PrinterGateXP.TicketItem();
@@ -62,21 +68,15 @@
             this.ticketItem110 = new PrinterGateXP.TicketItem1();
             this.ticketItem111 = new PrinterGateXP.TicketItem1();
             this.ticketItem20 = new PrinterGateXP.TicketItem();
-            this.tableLayoutOrders = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutFooter = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.tableLayoutMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutTitleBar = new System.Windows.Forms.TableLayoutPanel();
-            this.appIcon = new System.Windows.Forms.PictureBox();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonSettings = new System.Windows.Forms.Button();
-            this.buttonHideToTray = new System.Windows.Forms.Button();
-            this.labelServerStatus = new System.Windows.Forms.Label();
-            this.buttonSort = new System.Windows.Forms.Button();
+            this.ticketItem9 = new PrinterGateXP.TicketItem();
+            this.ticketItem10 = new PrinterGateXP.TicketItem();
+            this.ticketItem11 = new PrinterGateXP.TicketItem();
+            this.ticketItem12 = new PrinterGateXP.TicketItem();
+            this.ticketItem13 = new PrinterGateXP.TicketItem();
+            this.ticketItem14 = new PrinterGateXP.TicketItem();
+            this.ticketItem15 = new PrinterGateXP.TicketItem();
+            this.ticketItem16 = new PrinterGateXP.TicketItem();
             this.spinnerLoading = new PrinterGateXP.SpinningCircles();
-            this.buttonBigClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.tableLayoutTakeAway.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -97,7 +97,7 @@
             this.pictureBoxLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxLogo.Image = global::PrinterGateXP.Properties.Resources.logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(299, 0);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(197, 0);
             this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(200, 102);
@@ -115,13 +115,13 @@
             this.tableLayoutTakeAway.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTakeAway.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutTakeAway.Controls.Add(this.flowLayoutTakeAway, 0, 1);
-            this.tableLayoutTakeAway.Location = new System.Drawing.Point(513, 8);
+            this.tableLayoutTakeAway.Location = new System.Drawing.Point(411, 8);
             this.tableLayoutTakeAway.Name = "tableLayoutTakeAway";
             this.tableLayoutTakeAway.RowCount = 2;
             this.tableLayoutTakeAway.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutTakeAway.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTakeAway.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutTakeAway.Size = new System.Drawing.Size(499, 580);
+            this.tableLayoutTakeAway.Size = new System.Drawing.Size(397, 439);
             this.tableLayoutTakeAway.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -139,7 +139,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(499, 40);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(397, 40);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // labelTakeAway
@@ -160,9 +160,9 @@
             this.labelTakeAwayPrinterWarning.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelTakeAwayPrinterWarning.AutoSize = true;
             this.labelTakeAwayPrinterWarning.ForeColor = System.Drawing.Color.White;
-            this.labelTakeAwayPrinterWarning.Location = new System.Drawing.Point(283, 10);
+            this.labelTakeAwayPrinterWarning.Location = new System.Drawing.Point(241, 0);
             this.labelTakeAwayPrinterWarning.Name = "labelTakeAwayPrinterWarning";
-            this.labelTakeAwayPrinterWarning.Size = new System.Drawing.Size(213, 20);
+            this.labelTakeAwayPrinterWarning.Size = new System.Drawing.Size(153, 40);
             this.labelTakeAwayPrinterWarning.TabIndex = 1;
             this.labelTakeAwayPrinterWarning.Text = "Printers are not setup correctly.";
             this.labelTakeAwayPrinterWarning.Visible = false;
@@ -183,104 +183,8 @@
             this.flowLayoutTakeAway.Location = new System.Drawing.Point(0, 40);
             this.flowLayoutTakeAway.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutTakeAway.Name = "flowLayoutTakeAway";
-            this.flowLayoutTakeAway.Size = new System.Drawing.Size(499, 540);
+            this.flowLayoutTakeAway.Size = new System.Drawing.Size(397, 399);
             this.flowLayoutTakeAway.TabIndex = 5;
-            // 
-            // ticketItem9
-            // 
-            this.ticketItem9.AutoSize = true;
-            this.ticketItem9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem9.Location = new System.Drawing.Point(4, 5);
-            this.ticketItem9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem9.Name = "ticketItem9";
-            this.ticketItem9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem9.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem9.TabIndex = 0;
-            // 
-            // ticketItem10
-            // 
-            this.ticketItem10.AutoSize = true;
-            this.ticketItem10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem10.Location = new System.Drawing.Point(212, 5);
-            this.ticketItem10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem10.Name = "ticketItem10";
-            this.ticketItem10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem10.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem10.TabIndex = 1;
-            // 
-            // ticketItem11
-            // 
-            this.ticketItem11.AutoSize = true;
-            this.ticketItem11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem11.Location = new System.Drawing.Point(4, 286);
-            this.ticketItem11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem11.Name = "ticketItem11";
-            this.ticketItem11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem11.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem11.TabIndex = 2;
-            // 
-            // ticketItem12
-            // 
-            this.ticketItem12.AutoSize = true;
-            this.ticketItem12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem12.Location = new System.Drawing.Point(212, 286);
-            this.ticketItem12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem12.Name = "ticketItem12";
-            this.ticketItem12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem12.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem12.TabIndex = 3;
-            // 
-            // ticketItem13
-            // 
-            this.ticketItem13.AutoSize = true;
-            this.ticketItem13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem13.Location = new System.Drawing.Point(4, 567);
-            this.ticketItem13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem13.Name = "ticketItem13";
-            this.ticketItem13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem13.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem13.TabIndex = 4;
-            // 
-            // ticketItem14
-            // 
-            this.ticketItem14.AutoSize = true;
-            this.ticketItem14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem14.Location = new System.Drawing.Point(212, 567);
-            this.ticketItem14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem14.Name = "ticketItem14";
-            this.ticketItem14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem14.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem14.TabIndex = 5;
-            // 
-            // ticketItem15
-            // 
-            this.ticketItem15.AutoSize = true;
-            this.ticketItem15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem15.Location = new System.Drawing.Point(4, 848);
-            this.ticketItem15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem15.Name = "ticketItem15";
-            this.ticketItem15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem15.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem15.TabIndex = 6;
-            // 
-            // ticketItem16
-            // 
-            this.ticketItem16.AutoSize = true;
-            this.ticketItem16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem16.Location = new System.Drawing.Point(212, 848);
-            this.ticketItem16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem16.Name = "ticketItem16";
-            this.ticketItem16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem16.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem16.TabIndex = 7;
             // 
             // tableLayoutReservation
             // 
@@ -297,7 +201,7 @@
             this.tableLayoutReservation.RowCount = 2;
             this.tableLayoutReservation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutReservation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutReservation.Size = new System.Drawing.Size(499, 580);
+            this.tableLayoutReservation.Size = new System.Drawing.Size(397, 439);
             this.tableLayoutReservation.TabIndex = 0;
             // 
             // tableLayoutOrdersHeader
@@ -314,7 +218,7 @@
             this.tableLayoutOrdersHeader.Name = "tableLayoutOrdersHeader";
             this.tableLayoutOrdersHeader.RowCount = 1;
             this.tableLayoutOrdersHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutOrdersHeader.Size = new System.Drawing.Size(499, 40);
+            this.tableLayoutOrdersHeader.Size = new System.Drawing.Size(397, 40);
             this.tableLayoutOrdersHeader.TabIndex = 3;
             // 
             // labelReservations
@@ -335,9 +239,9 @@
             this.labelReservationPrinterWarning.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelReservationPrinterWarning.AutoSize = true;
             this.labelReservationPrinterWarning.ForeColor = System.Drawing.Color.White;
-            this.labelReservationPrinterWarning.Location = new System.Drawing.Point(300, 10);
+            this.labelReservationPrinterWarning.Location = new System.Drawing.Point(258, 0);
             this.labelReservationPrinterWarning.Name = "labelReservationPrinterWarning";
-            this.labelReservationPrinterWarning.Size = new System.Drawing.Size(196, 20);
+            this.labelReservationPrinterWarning.Size = new System.Drawing.Size(136, 40);
             this.labelReservationPrinterWarning.TabIndex = 1;
             this.labelReservationPrinterWarning.Text = "Printer is not setup correctly.";
             this.labelReservationPrinterWarning.Visible = false;
@@ -362,169 +266,8 @@
             this.flowLayoutReservation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutReservation.Location = new System.Drawing.Point(3, 43);
             this.flowLayoutReservation.Name = "flowLayoutReservation";
-            this.flowLayoutReservation.Size = new System.Drawing.Size(493, 534);
+            this.flowLayoutReservation.Size = new System.Drawing.Size(391, 393);
             this.flowLayoutReservation.TabIndex = 4;
-            // 
-            // ticketItem1
-            // 
-            this.ticketItem1.AutoSize = true;
-            this.ticketItem1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem1.Location = new System.Drawing.Point(4, 5);
-            this.ticketItem1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem1.Name = "ticketItem1";
-            this.ticketItem1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem1.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem1.TabIndex = 0;
-            this.ticketItem1.Visible = false;
-            // 
-            // ticketItem2
-            // 
-            this.ticketItem2.AutoSize = true;
-            this.ticketItem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem2.Location = new System.Drawing.Point(212, 5);
-            this.ticketItem2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem2.Name = "ticketItem2";
-            this.ticketItem2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem2.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem2.TabIndex = 1;
-            this.ticketItem2.Visible = false;
-            // 
-            // ticketItem3
-            // 
-            this.ticketItem3.AutoSize = true;
-            this.ticketItem3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem3.Location = new System.Drawing.Point(4, 286);
-            this.ticketItem3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem3.Name = "ticketItem3";
-            this.ticketItem3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem3.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem3.TabIndex = 2;
-            // 
-            // ticketItem4
-            // 
-            this.ticketItem4.AutoSize = true;
-            this.ticketItem4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem4.Location = new System.Drawing.Point(212, 286);
-            this.ticketItem4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem4.Name = "ticketItem4";
-            this.ticketItem4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem4.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem4.TabIndex = 3;
-            // 
-            // ticketItem5
-            // 
-            this.ticketItem5.AutoSize = true;
-            this.ticketItem5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem5.Location = new System.Drawing.Point(4, 567);
-            this.ticketItem5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem5.Name = "ticketItem5";
-            this.ticketItem5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem5.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem5.TabIndex = 4;
-            // 
-            // ticketItem6
-            // 
-            this.ticketItem6.AutoSize = true;
-            this.ticketItem6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem6.Location = new System.Drawing.Point(212, 567);
-            this.ticketItem6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem6.Name = "ticketItem6";
-            this.ticketItem6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem6.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem6.TabIndex = 5;
-            // 
-            // ticketItem7
-            // 
-            this.ticketItem7.AutoSize = true;
-            this.ticketItem7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem7.Location = new System.Drawing.Point(4, 848);
-            this.ticketItem7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem7.Name = "ticketItem7";
-            this.ticketItem7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem7.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem7.TabIndex = 6;
-            // 
-            // ticketItem8
-            // 
-            this.ticketItem8.AutoSize = true;
-            this.ticketItem8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem8.Location = new System.Drawing.Point(212, 848);
-            this.ticketItem8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem8.Name = "ticketItem8";
-            this.ticketItem8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem8.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem8.TabIndex = 7;
-            // 
-            // ticketItem17
-            // 
-            this.ticketItem17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ticketItem17.Location = new System.Drawing.Point(4, 1129);
-            this.ticketItem17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem17.Name = "ticketItem17";
-            this.ticketItem17.Size = new System.Drawing.Size(119, 144);
-            this.ticketItem17.TabIndex = 8;
-            // 
-            // ticketItem18
-            // 
-            this.ticketItem18.AutoSize = true;
-            this.ticketItem18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem18.Location = new System.Drawing.Point(129, 1126);
-            this.ticketItem18.Margin = new System.Windows.Forms.Padding(2);
-            this.ticketItem18.Name = "ticketItem18";
-            this.ticketItem18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem18.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem18.TabIndex = 9;
-            // 
-            // ticketItem19
-            // 
-            this.ticketItem19.AutoSize = true;
-            this.ticketItem19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem19.Location = new System.Drawing.Point(2, 1401);
-            this.ticketItem19.Margin = new System.Windows.Forms.Padding(2);
-            this.ticketItem19.Name = "ticketItem19";
-            this.ticketItem19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem19.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem19.TabIndex = 10;
-            // 
-            // ticketItem110
-            // 
-            this.ticketItem110.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ticketItem110.Location = new System.Drawing.Point(208, 1404);
-            this.ticketItem110.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem110.Name = "ticketItem110";
-            this.ticketItem110.Size = new System.Drawing.Size(119, 144);
-            this.ticketItem110.TabIndex = 11;
-            // 
-            // ticketItem111
-            // 
-            this.ticketItem111.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ticketItem111.Location = new System.Drawing.Point(335, 1404);
-            this.ticketItem111.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ticketItem111.Name = "ticketItem111";
-            this.ticketItem111.Size = new System.Drawing.Size(119, 144);
-            this.ticketItem111.TabIndex = 12;
-            // 
-            // ticketItem20
-            // 
-            this.ticketItem20.AutoSize = true;
-            this.ticketItem20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ticketItem20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ticketItem20.Location = new System.Drawing.Point(2, 1676);
-            this.ticketItem20.Margin = new System.Windows.Forms.Padding(2);
-            this.ticketItem20.Name = "ticketItem20";
-            this.ticketItem20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ticketItem20.Size = new System.Drawing.Size(200, 271);
-            this.ticketItem20.TabIndex = 13;
             // 
             // tableLayoutOrders
             // 
@@ -545,7 +288,7 @@
             this.tableLayoutOrders.RowCount = 2;
             this.tableLayoutOrders.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutOrders.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
-            this.tableLayoutOrders.Size = new System.Drawing.Size(1020, 704);
+            this.tableLayoutOrders.Size = new System.Drawing.Size(816, 563);
             this.tableLayoutOrders.TabIndex = 6;
             // 
             // tableLayoutFooter
@@ -556,20 +299,20 @@
             this.tableLayoutFooter.ColumnCount = 1;
             this.tableLayoutFooter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFooter.Controls.Add(this.pictureBoxLogo, 0, 0);
-            this.tableLayoutFooter.Location = new System.Drawing.Point(513, 594);
+            this.tableLayoutFooter.Location = new System.Drawing.Point(411, 453);
             this.tableLayoutFooter.Name = "tableLayoutFooter";
             this.tableLayoutFooter.RowCount = 1;
             this.tableLayoutFooter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFooter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.tableLayoutFooter.Size = new System.Drawing.Size(499, 102);
+            this.tableLayoutFooter.Size = new System.Drawing.Size(397, 102);
             this.tableLayoutFooter.TabIndex = 7;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.labelVersion);
-            this.panel1.Location = new System.Drawing.Point(8, 594);
+            this.panel1.Location = new System.Drawing.Point(8, 453);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(499, 102);
+            this.panel1.Size = new System.Drawing.Size(397, 102);
             this.panel1.TabIndex = 8;
             // 
             // labelVersion
@@ -580,7 +323,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(52, 20);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "v3.0.8";
+            this.labelVersion.Text = "v3.0.9";
             // 
             // tableLayoutMain
             // 
@@ -598,7 +341,7 @@
             this.tableLayoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutMain.Size = new System.Drawing.Size(1020, 764);
+            this.tableLayoutMain.Size = new System.Drawing.Size(816, 611);
             this.tableLayoutMain.TabIndex = 7;
             // 
             // tableLayoutTitleBar
@@ -631,7 +374,7 @@
             this.tableLayoutTitleBar.Name = "tableLayoutTitleBar";
             this.tableLayoutTitleBar.RowCount = 1;
             this.tableLayoutTitleBar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutTitleBar.Size = new System.Drawing.Size(1020, 60);
+            this.tableLayoutTitleBar.Size = new System.Drawing.Size(816, 60);
             this.tableLayoutTitleBar.TabIndex = 4;
             // 
             // appIcon
@@ -653,7 +396,7 @@
             this.btnMaximize.FlatAppearance.BorderSize = 0;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Image = global::PrinterGateXP.Properties.Resources.restore_up;
-            this.btnMaximize.Location = new System.Drawing.Point(960, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(756, 0);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(60, 60);
@@ -684,7 +427,7 @@
             this.buttonSettings.FlatAppearance.BorderSize = 0;
             this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSettings.Image = global::PrinterGateXP.Properties.Resources.buttonSettings;
-            this.buttonSettings.Location = new System.Drawing.Point(840, 0);
+            this.buttonSettings.Location = new System.Drawing.Point(636, 0);
             this.buttonSettings.Margin = new System.Windows.Forms.Padding(0);
             this.buttonSettings.Name = "buttonSettings";
             this.buttonSettings.Size = new System.Drawing.Size(60, 60);
@@ -700,7 +443,7 @@
             this.buttonHideToTray.FlatAppearance.BorderSize = 0;
             this.buttonHideToTray.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHideToTray.Image = global::PrinterGateXP.Properties.Resources.hide_up;
-            this.buttonHideToTray.Location = new System.Drawing.Point(900, 0);
+            this.buttonHideToTray.Location = new System.Drawing.Point(696, 0);
             this.buttonHideToTray.Margin = new System.Windows.Forms.Padding(0);
             this.buttonHideToTray.Name = "buttonHideToTray";
             this.buttonHideToTray.Size = new System.Drawing.Size(60, 60);
@@ -712,7 +455,7 @@
             // 
             this.labelServerStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelServerStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.labelServerStatus.Location = new System.Drawing.Point(795, 15);
+            this.labelServerStatus.Location = new System.Drawing.Point(591, 15);
             this.labelServerStatus.Margin = new System.Windows.Forms.Padding(0);
             this.labelServerStatus.Name = "labelServerStatus";
             this.labelServerStatus.Size = new System.Drawing.Size(30, 30);
@@ -726,22 +469,13 @@
             this.buttonSort.FlatAppearance.BorderSize = 0;
             this.buttonSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSort.Image = global::PrinterGateXP.Properties.Resources.sort;
-            this.buttonSort.Location = new System.Drawing.Point(660, 0);
+            this.buttonSort.Location = new System.Drawing.Point(456, 0);
             this.buttonSort.Margin = new System.Windows.Forms.Padding(0);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(60, 60);
             this.buttonSort.TabIndex = 7;
             this.buttonSort.UseVisualStyleBackColor = false;
             this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
-            // 
-            // spinnerLoading
-            // 
-            this.spinnerLoading.BackColor = System.Drawing.Color.Transparent;
-            this.spinnerLoading.Location = new System.Drawing.Point(723, 3);
-            this.spinnerLoading.Name = "spinnerLoading";
-            this.spinnerLoading.Size = new System.Drawing.Size(54, 54);
-            this.spinnerLoading.TabIndex = 6;
-            this.spinnerLoading.Text = "spinningCircles1";
             // 
             // buttonBigClose
             // 
@@ -753,21 +487,287 @@
             this.buttonBigClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBigClose.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBigClose.ForeColor = System.Drawing.Color.White;
-            this.buttonBigClose.Location = new System.Drawing.Point(370, 0);
+            this.buttonBigClose.Location = new System.Drawing.Point(300, 0);
             this.buttonBigClose.Margin = new System.Windows.Forms.Padding(0);
             this.buttonBigClose.Name = "buttonBigClose";
-            this.buttonBigClose.Size = new System.Drawing.Size(220, 60);
+            this.buttonBigClose.Size = new System.Drawing.Size(156, 60);
             this.buttonBigClose.TabIndex = 2;
             this.buttonBigClose.Text = "Close";
             this.buttonBigClose.UseVisualStyleBackColor = false;
             this.buttonBigClose.Click += new System.EventHandler(this.OnHideToTray);
+            // 
+            // ticketItem1
+            // 
+            this.ticketItem1.AutoSize = true;
+            this.ticketItem1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem1.Location = new System.Drawing.Point(4, 5);
+            this.ticketItem1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem1.Name = "ticketItem1";
+            this.ticketItem1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem1.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem1.TabIndex = 0;
+            this.ticketItem1.Visible = false;
+            // 
+            // ticketItem2
+            // 
+            this.ticketItem2.AutoSize = true;
+            this.ticketItem2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem2.Location = new System.Drawing.Point(172, 5);
+            this.ticketItem2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem2.Name = "ticketItem2";
+            this.ticketItem2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem2.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem2.TabIndex = 1;
+            this.ticketItem2.Visible = false;
+            // 
+            // ticketItem3
+            // 
+            this.ticketItem3.AutoSize = true;
+            this.ticketItem3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem3.Location = new System.Drawing.Point(4, 232);
+            this.ticketItem3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem3.Name = "ticketItem3";
+            this.ticketItem3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem3.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem3.TabIndex = 2;
+            // 
+            // ticketItem4
+            // 
+            this.ticketItem4.AutoSize = true;
+            this.ticketItem4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem4.Location = new System.Drawing.Point(172, 232);
+            this.ticketItem4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem4.Name = "ticketItem4";
+            this.ticketItem4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem4.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem4.TabIndex = 3;
+            // 
+            // ticketItem5
+            // 
+            this.ticketItem5.AutoSize = true;
+            this.ticketItem5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem5.Location = new System.Drawing.Point(4, 459);
+            this.ticketItem5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem5.Name = "ticketItem5";
+            this.ticketItem5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem5.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem5.TabIndex = 4;
+            // 
+            // ticketItem6
+            // 
+            this.ticketItem6.AutoSize = true;
+            this.ticketItem6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem6.Location = new System.Drawing.Point(172, 459);
+            this.ticketItem6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem6.Name = "ticketItem6";
+            this.ticketItem6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem6.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem6.TabIndex = 5;
+            // 
+            // ticketItem7
+            // 
+            this.ticketItem7.AutoSize = true;
+            this.ticketItem7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem7.Location = new System.Drawing.Point(4, 686);
+            this.ticketItem7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem7.Name = "ticketItem7";
+            this.ticketItem7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem7.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem7.TabIndex = 6;
+            // 
+            // ticketItem8
+            // 
+            this.ticketItem8.AutoSize = true;
+            this.ticketItem8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem8.Location = new System.Drawing.Point(172, 686);
+            this.ticketItem8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem8.Name = "ticketItem8";
+            this.ticketItem8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem8.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem8.TabIndex = 7;
+            // 
+            // ticketItem17
+            // 
+            this.ticketItem17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ticketItem17.Location = new System.Drawing.Point(4, 913);
+            this.ticketItem17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem17.Name = "ticketItem17";
+            this.ticketItem17.Size = new System.Drawing.Size(95, 115);
+            this.ticketItem17.TabIndex = 8;
+            // 
+            // ticketItem18
+            // 
+            this.ticketItem18.AutoSize = true;
+            this.ticketItem18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem18.Location = new System.Drawing.Point(105, 910);
+            this.ticketItem18.Margin = new System.Windows.Forms.Padding(2);
+            this.ticketItem18.Name = "ticketItem18";
+            this.ticketItem18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem18.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem18.TabIndex = 9;
+            // 
+            // ticketItem19
+            // 
+            this.ticketItem19.AutoSize = true;
+            this.ticketItem19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem19.Location = new System.Drawing.Point(2, 1131);
+            this.ticketItem19.Margin = new System.Windows.Forms.Padding(2);
+            this.ticketItem19.Name = "ticketItem19";
+            this.ticketItem19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem19.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem19.TabIndex = 10;
+            // 
+            // ticketItem110
+            // 
+            this.ticketItem110.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ticketItem110.Location = new System.Drawing.Point(168, 1134);
+            this.ticketItem110.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem110.Name = "ticketItem110";
+            this.ticketItem110.Size = new System.Drawing.Size(95, 115);
+            this.ticketItem110.TabIndex = 11;
+            // 
+            // ticketItem111
+            // 
+            this.ticketItem111.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ticketItem111.Location = new System.Drawing.Point(271, 1134);
+            this.ticketItem111.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem111.Name = "ticketItem111";
+            this.ticketItem111.Size = new System.Drawing.Size(95, 115);
+            this.ticketItem111.TabIndex = 12;
+            // 
+            // ticketItem20
+            // 
+            this.ticketItem20.AutoSize = true;
+            this.ticketItem20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem20.Location = new System.Drawing.Point(2, 1352);
+            this.ticketItem20.Margin = new System.Windows.Forms.Padding(2);
+            this.ticketItem20.Name = "ticketItem20";
+            this.ticketItem20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem20.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem20.TabIndex = 13;
+            // 
+            // ticketItem9
+            // 
+            this.ticketItem9.AutoSize = true;
+            this.ticketItem9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem9.Location = new System.Drawing.Point(4, 5);
+            this.ticketItem9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem9.Name = "ticketItem9";
+            this.ticketItem9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem9.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem9.TabIndex = 0;
+            // 
+            // ticketItem10
+            // 
+            this.ticketItem10.AutoSize = true;
+            this.ticketItem10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem10.Location = new System.Drawing.Point(172, 5);
+            this.ticketItem10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem10.Name = "ticketItem10";
+            this.ticketItem10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem10.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem10.TabIndex = 1;
+            // 
+            // ticketItem11
+            // 
+            this.ticketItem11.AutoSize = true;
+            this.ticketItem11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem11.Location = new System.Drawing.Point(4, 232);
+            this.ticketItem11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem11.Name = "ticketItem11";
+            this.ticketItem11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem11.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem11.TabIndex = 2;
+            // 
+            // ticketItem12
+            // 
+            this.ticketItem12.AutoSize = true;
+            this.ticketItem12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem12.Location = new System.Drawing.Point(172, 232);
+            this.ticketItem12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem12.Name = "ticketItem12";
+            this.ticketItem12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem12.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem12.TabIndex = 3;
+            // 
+            // ticketItem13
+            // 
+            this.ticketItem13.AutoSize = true;
+            this.ticketItem13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem13.Location = new System.Drawing.Point(4, 459);
+            this.ticketItem13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem13.Name = "ticketItem13";
+            this.ticketItem13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem13.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem13.TabIndex = 4;
+            // 
+            // ticketItem14
+            // 
+            this.ticketItem14.AutoSize = true;
+            this.ticketItem14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem14.Location = new System.Drawing.Point(172, 459);
+            this.ticketItem14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem14.Name = "ticketItem14";
+            this.ticketItem14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem14.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem14.TabIndex = 5;
+            // 
+            // ticketItem15
+            // 
+            this.ticketItem15.AutoSize = true;
+            this.ticketItem15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem15.Location = new System.Drawing.Point(4, 686);
+            this.ticketItem15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem15.Name = "ticketItem15";
+            this.ticketItem15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem15.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem15.TabIndex = 6;
+            // 
+            // ticketItem16
+            // 
+            this.ticketItem16.AutoSize = true;
+            this.ticketItem16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ticketItem16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ticketItem16.Location = new System.Drawing.Point(172, 686);
+            this.ticketItem16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketItem16.Name = "ticketItem16";
+            this.ticketItem16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ticketItem16.Size = new System.Drawing.Size(160, 217);
+            this.ticketItem16.TabIndex = 7;
+            // 
+            // spinnerLoading
+            // 
+            this.spinnerLoading.BackColor = System.Drawing.Color.Transparent;
+            this.spinnerLoading.Location = new System.Drawing.Point(519, 3);
+            this.spinnerLoading.Name = "spinnerLoading";
+            this.spinnerLoading.Size = new System.Drawing.Size(54, 54);
+            this.spinnerLoading.TabIndex = 6;
+            this.spinnerLoading.Text = "spinningCircles1";
             // 
             // MainFormAdvanced
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.ClientSize = new System.Drawing.Size(1023, 726);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutOrders);
             this.Controls.Add(this.tableLayoutMain);
