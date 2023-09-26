@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -17,7 +18,25 @@ namespace PrinterGateXP
 				}
 				else
 				{
-					Application.EnableVisualStyles();
+                    string exePath = @"update.exe";
+                    try
+                    {
+                        Process process = new Process();
+                        // Set the process start information
+                        process.StartInfo.FileName = exePath;
+
+                        // Start the process
+                        process.Start();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+                    finally
+                    {
+
+                    }
+                    Application.EnableVisualStyles();
 					Application.SetCompatibleTextRenderingDefault(false);
 					//Application.Run(new MainForm());
 					Application.Run(new MainFormAdvanced());

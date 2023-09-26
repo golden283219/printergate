@@ -36,7 +36,14 @@ namespace PrinterGateXP
 			this.orderCount = 0;
 			foreach (Order order in orderList)
 			{
-				AddOrder(order);
+				DateTime current = DateTime.Now;
+				DateTime date = Utils.UnixTimeStampToDateTime(order.date_checkin);
+				
+                if (DateTime.Compare(date, current) <= 0)
+				{
+                    AddOrder(order);
+                }
+				//AddOrder(order);
 			}
 
 		}

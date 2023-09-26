@@ -255,6 +255,7 @@ namespace PrinterGateXP
 				name = restaurantOrderCustomF.CUSTOMF_NAME + " " + restaurantOrderCustomF.CUSTOMF_LNAME,
 				email = restaurantOrderCustomF.CUSTOMF_EMAIL,
 				phone = restaurantOrderCustomF.CUSTOMF_PHONE,
+				people = rawOrder.people,
 				date = rawOrder.created_on,
 				date_checkin = rawOrder.checkin_ts,
 			};

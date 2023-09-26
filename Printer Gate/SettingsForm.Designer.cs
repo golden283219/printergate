@@ -14,6 +14,7 @@
 		private void InitializeComponent()
 		{
             this.tableLayoutSettingsMain = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.checkBoxXMLExport = new System.Windows.Forms.CheckBox();
             this.buttonExportBrowse = new System.Windows.Forms.Button();
@@ -26,6 +27,12 @@
             this.labelStartupDelay = new System.Windows.Forms.Label();
             this.textBoxStartupDelay = new System.Windows.Forms.TextBox();
             this.labelSeconds4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxTLSVersion = new System.Windows.Forms.ComboBox();
+            this.labelUpdate = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.buttonSaveOptions = new System.Windows.Forms.Button();
             this.tabControlSettings = new System.Windows.Forms.TabControl();
             this.tabPagePrinters = new System.Windows.Forms.TabPage();
@@ -94,9 +101,6 @@
             this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
             this.labelLanguage = new System.Windows.Forms.Label();
             this.buttonQuit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxTLSVersion = new System.Windows.Forms.ComboBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.alarmSelectionConnectionLost = new PrinterGateXP.AlarmSelection();
             this.alarmSelectionTableReservation = new PrinterGateXP.AlarmSelection();
             this.alarmSelectionFoodReservation = new PrinterGateXP.AlarmSelection();
@@ -104,6 +108,7 @@
             this.tableLayoutSettingsMain.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tabControlSettings.SuspendLayout();
             this.tabPagePrinters.SuspendLayout();
             this.tableLayoutServerAndPrinters.SuspendLayout();
@@ -126,7 +131,6 @@
             this.tableLayoutWelcomeMessages.SuspendLayout();
             this.tabPageSorryMessage.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutSettingsMain
@@ -134,6 +138,7 @@
             this.tableLayoutSettingsMain.ColumnCount = 2;
             this.tableLayoutSettingsMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.10963F));
             this.tableLayoutSettingsMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.89037F));
+            this.tableLayoutSettingsMain.Controls.Add(this.label2, 0, 7);
             this.tableLayoutSettingsMain.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutSettingsMain.Controls.Add(this.checkBoxWelcomeMessage, 0, 1);
             this.tableLayoutSettingsMain.Controls.Add(this.checkBoxFullAddressDelivery, 0, 2);
@@ -141,6 +146,9 @@
             this.tableLayoutSettingsMain.Controls.Add(this.checkBoxShowBalloon, 0, 4);
             this.tableLayoutSettingsMain.Controls.Add(this.tableLayoutPanel2, 0, 5);
             this.tableLayoutSettingsMain.Controls.Add(this.panel4, 0, 6);
+            this.tableLayoutSettingsMain.Controls.Add(this.label3, 1, 7);
+            this.tableLayoutSettingsMain.Controls.Add(this.button1, 1, 8);
+            this.tableLayoutSettingsMain.Controls.Add(this.labelUpdate, 0, 8);
             this.tableLayoutSettingsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutSettingsMain.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutSettingsMain.Margin = new System.Windows.Forms.Padding(0);
@@ -162,6 +170,20 @@
             this.tableLayoutSettingsMain.Size = new System.Drawing.Size(622, 563);
             this.tableLayoutSettingsMain.TabIndex = 0;
             this.tableLayoutSettingsMain.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutSettingsMain_Paint);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(156)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 226);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(403, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Update Server";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel4
             // 
@@ -310,6 +332,75 @@
             this.labelSeconds4.Size = new System.Drawing.Size(65, 20);
             this.labelSeconds4.TabIndex = 2;
             this.labelSeconds4.Text = "Seconds";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.comboBoxTLSVersion);
+            this.panel4.Location = new System.Drawing.Point(13, 193);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(397, 30);
+            this.panel4.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-1, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "TLS version";
+            // 
+            // comboBoxTLSVersion
+            // 
+            this.comboBoxTLSVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTLSVersion.FormattingEnabled = true;
+            this.comboBoxTLSVersion.Items.AddRange(new object[] {
+            "1.1",
+            "1.2",
+            "1.3"});
+            this.comboBoxTLSVersion.Location = new System.Drawing.Point(86, 1);
+            this.comboBoxTLSVersion.Name = "comboBoxTLSVersion";
+            this.comboBoxTLSVersion.Size = new System.Drawing.Size(94, 28);
+            this.comboBoxTLSVersion.TabIndex = 13;
+            // 
+            // labelUpdate
+            // 
+            this.labelUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUpdate.AutoSize = true;
+            this.labelUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelUpdate.ForeColor = System.Drawing.Color.Black;
+            this.labelUpdate.Location = new System.Drawing.Point(10, 255);
+            this.labelUpdate.Margin = new System.Windows.Forms.Padding(0);
+            this.labelUpdate.Name = "labelUpdate";
+            this.labelUpdate.Size = new System.Drawing.Size(403, 20);
+            this.labelUpdate.TabIndex = 15;
+            this.labelUpdate.Text = "https://test.waage-flamatt.ch/";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(497, 253);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 24);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(96)))), ((int)(((byte)(156)))));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(413, 226);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(199, 24);
+            this.label3.TabIndex = 17;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonSaveOptions
             // 
@@ -646,7 +737,7 @@
             this.tableLayoutAlarmSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutAlarmSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutAlarmSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutAlarmSettings.Size = new System.Drawing.Size(622, 563);
+            this.tableLayoutAlarmSettings.Size = new System.Drawing.Size(622, 570);
             this.tableLayoutAlarmSettings.TabIndex = 1;
             // 
             // labelClosePopup
@@ -936,7 +1027,7 @@
             this.tableLayoutWelcomeMessages.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutWelcomeMessages.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutWelcomeMessages.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutWelcomeMessages.Size = new System.Drawing.Size(622, 563);
+            this.tableLayoutWelcomeMessages.Size = new System.Drawing.Size(622, 570);
             this.tableLayoutWelcomeMessages.TabIndex = 1;
             // 
             // labelWelcomeRestaurant
@@ -1120,7 +1211,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(622, 563);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(622, 570);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // labelSorryRestaurant
@@ -1191,37 +1282,6 @@
             this.buttonQuit.Text = "Quit ";
             this.buttonQuit.UseVisualStyleBackColor = false;
             this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-1, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "TLS version";
-            // 
-            // comboBoxTLSVersion
-            // 
-            this.comboBoxTLSVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTLSVersion.FormattingEnabled = true;
-            this.comboBoxTLSVersion.Items.AddRange(new object[] {
-            "1.1",
-            "1.2",
-            "1.3"});
-            this.comboBoxTLSVersion.Location = new System.Drawing.Point(86, 1);
-            this.comboBoxTLSVersion.Name = "comboBoxTLSVersion";
-            this.comboBoxTLSVersion.Size = new System.Drawing.Size(94, 28);
-            this.comboBoxTLSVersion.TabIndex = 13;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.comboBoxTLSVersion);
-            this.panel4.Location = new System.Drawing.Point(13, 193);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(397, 30);
-            this.panel4.TabIndex = 14;
             // 
             // alarmSelectionConnectionLost
             // 
@@ -1297,6 +1357,8 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.tabControlSettings.ResumeLayout(false);
             this.tabPagePrinters.ResumeLayout(false);
             this.tableLayoutServerAndPrinters.ResumeLayout(false);
@@ -1329,8 +1391,6 @@
             this.tabPageSorryMessage.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1501,5 +1561,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox comboBoxTLSVersion;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelUpdate;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

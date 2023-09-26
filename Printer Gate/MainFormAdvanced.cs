@@ -913,5 +913,15 @@ namespace PrinterGateXP
         {
             SortOrders();
         }
+
+        private void labelVersion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ticketItem1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

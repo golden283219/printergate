@@ -17,7 +17,8 @@ namespace PrinterGateXP
 			if (!File.Exists(AppConfig.CONFIG_PATH))
 			{
 				AppConfig.appConfig.host = AppConfig.DEFAULT_SERVER;
-				AppConfig.appConfig.welcomeRestaurantMessage = "{greetings} {name}.{br}Wir möchten Ihren Besuch verdanken und wünschen Ihnen einen schönen Aufenthalt in unserem Restaurant.";
+				AppConfig.appConfig.hostUpdate = AppConfig.DEFAULT_SERVER;
+                AppConfig.appConfig.welcomeRestaurantMessage = "{greetings} {name}.{br}Wir möchten Ihren Besuch verdanken und wünschen Ihnen einen schönen Aufenthalt in unserem Restaurant.";
 				AppConfig.appConfig.haveNiceMealMessage = "{greetings} {name}.{br}Wir möchten Ihnen für die Bestellung danken und wünschen Ihnen guten Appetit.";
 				AppConfig.appConfig.welcomeHotelMessage = "{greetings} {name}.{br}Willkommen in unserem Hotel. Wir wünschen Ihnen einen angenehmen Aufenthalt.";
 				AppConfig.appConfig.declineRestaurantMessage = "{greetings} {name}.{br}Leider können wir Îhnen keinen Tisch zu dieser Uhrzeit anbieten. Bitte wählen Sie eine andere Uhrzeit oder rufen uns an.";
@@ -203,7 +204,9 @@ namespace PrinterGateXP
 
 		public string host;
 
-		public string welcomeRestaurantMessage;
+        public string hostUpdate;
+
+        public string welcomeRestaurantMessage;
 
 		public string haveNiceMealMessage;
 

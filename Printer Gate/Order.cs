@@ -25,6 +25,8 @@ namespace PrinterGateXP
 
 		public string address;
 
+		public string people;
+
 		public string notes;
 
 		public TakeAwayItemDetails orderItemDetails;//public string orderInfo;

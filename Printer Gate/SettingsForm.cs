@@ -65,7 +65,8 @@ namespace PrinterGateXP
 				this.AddPrinter(categoryName, gatePrinter.printerName, i);
 			}
 			this.labelServer.Text = this.appConfig.host;
-			this.comboBoxLanguage.Items.Add("English");
+			this.labelUpdate.Text = this.appConfig.hostUpdate;
+            this.comboBoxLanguage.Items.Add("English");
 			this.comboBoxLanguage.Items.Add("Deutsch");
 			this.comboBoxLanguage.SelectedIndex = ((this.appConfig.lang == Localization.EN) ? 0 : 1);
 			this.textBoxClosePopupAfter.Text = string.Format("{0}", this.appConfig.closePopupAfter);
@@ -371,6 +372,21 @@ namespace PrinterGateXP
         private void tableLayoutSettingsMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string userInput = Prompt.GetUserInput("Update Server URL", "Update Server", this.appConfig.hostUpdate);
+            if (userInput != null)
+            {
+                this.labelUpdate.Text = userInput;
+                this.appConfig.hostUpdate = userInput;
+                AppConfig.SaveSettings();
+                if (MessageBox.Show(Localization.Translation("restart_confirmation"), Localization.Translation("restart"), MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+            }
         }
     }
 }

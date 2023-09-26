@@ -38,6 +38,8 @@
             this.labelDateTimeTitle = new System.Windows.Forms.Label();
             this.labelNoTitle = new System.Windows.Forms.Label();
             this.group1 = new System.Windows.Forms.Panel();
+            this.labelPeopleTitle = new System.Windows.Forms.Label();
+            this.labelPeople = new System.Windows.Forms.Label();
             this.labelNameTitle = new System.Windows.Forms.Label();
             this.buttonSend = new System.Windows.Forms.Button();
             this.flowLayoutPanel_Root = new System.Windows.Forms.FlowLayoutPanel();
@@ -59,6 +61,7 @@
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.buttonReject = new System.Windows.Forms.Button();
             this.buttonStress = new System.Windows.Forms.Button();
+            this.labelPeople1 = new System.Windows.Forms.Label();
             this.group1.SuspendLayout();
             this.flowLayoutPanel_Root.SuspendLayout();
             this.summaryPanel.SuspendLayout();
@@ -72,12 +75,11 @@
             // 
             this.labelDateTime.AutoSize = true;
             this.labelDateTime.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelDateTime.Location = new System.Drawing.Point(64, 15);
+            this.labelDateTime.Location = new System.Drawing.Point(66, 15);
             this.labelDateTime.Name = "labelDateTime";
-            this.labelDateTime.Size = new System.Drawing.Size(61, 13);
+            this.labelDateTime.Size = new System.Drawing.Size(91, 13);
             this.labelDateTime.TabIndex = 6;
-            this.labelDateTime.Text = "02.11.2022";
-            this.labelDateTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelDateTime.Text = "02.11.2022 11:00";
             this.labelDateTime.Click += new System.EventHandler(this.detailPanel_Click);
             // 
             // labelNo
@@ -87,7 +89,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNo.AutoSize = true;
             this.labelNo.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelNo.Location = new System.Drawing.Point(77, 3);
+            this.labelNo.Location = new System.Drawing.Point(66, 3);
             this.labelNo.Name = "labelNo";
             this.labelNo.Size = new System.Drawing.Size(37, 13);
             this.labelNo.TabIndex = 7;
@@ -112,7 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPhone.AutoSize = true;
             this.labelPhone.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelPhone.Location = new System.Drawing.Point(46, 62);
+            this.labelPhone.Location = new System.Drawing.Point(52, 62);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(81, 13);
             this.labelPhone.TabIndex = 9;
@@ -125,7 +127,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelEmail.Location = new System.Drawing.Point(46, 74);
+            this.labelEmail.Location = new System.Drawing.Point(52, 74);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(96, 13);
             this.labelEmail.TabIndex = 10;
@@ -178,6 +180,8 @@
             // 
             // group1
             // 
+            this.group1.Controls.Add(this.labelPeopleTitle);
+            this.group1.Controls.Add(this.labelPeople);
             this.group1.Controls.Add(this.labelNo);
             this.group1.Controls.Add(this.labelNoTitle);
             this.group1.Controls.Add(this.labelDateTimeTitle);
@@ -192,9 +196,33 @@
             this.group1.Location = new System.Drawing.Point(0, 0);
             this.group1.Margin = new System.Windows.Forms.Padding(0);
             this.group1.Name = "group1";
-            this.group1.Size = new System.Drawing.Size(150, 89);
+            this.group1.Size = new System.Drawing.Size(150, 116);
             this.group1.TabIndex = 25;
             this.group1.Click += new System.EventHandler(this.detailPanel_Click);
+            // 
+            // labelPeopleTitle
+            // 
+            this.labelPeopleTitle.AutoSize = true;
+            this.labelPeopleTitle.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.labelPeopleTitle.Location = new System.Drawing.Point(3, 87);
+            this.labelPeopleTitle.Name = "labelPeopleTitle";
+            this.labelPeopleTitle.Size = new System.Drawing.Size(51, 13);
+            this.labelPeopleTitle.TabIndex = 30;
+            this.labelPeopleTitle.Text = "Persons:";
+            this.labelPeopleTitle.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labelPeople
+            // 
+            this.labelPeople.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPeople.AutoSize = true;
+            this.labelPeople.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelPeople.Location = new System.Drawing.Point(51, 87);
+            this.labelPeople.Name = "labelPeople";
+            this.labelPeople.Size = new System.Drawing.Size(57, 13);
+            this.labelPeople.TabIndex = 29;
+            this.labelPeople.Text = "2 persons";
+            this.labelPeople.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelNameTitle
             // 
@@ -233,11 +261,12 @@
             this.flowLayoutPanel_Root.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel_Root.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel_Root.Name = "flowLayoutPanel_Root";
-            this.flowLayoutPanel_Root.Size = new System.Drawing.Size(150, 211);
+            this.flowLayoutPanel_Root.Size = new System.Drawing.Size(150, 238);
             this.flowLayoutPanel_Root.TabIndex = 26;
             // 
             // summaryPanel
             // 
+            this.summaryPanel.Controls.Add(this.labelPeople1);
             this.summaryPanel.Controls.Add(this.labelDateTimeTitle1);
             this.summaryPanel.Controls.Add(this.labelDateTime1);
             this.summaryPanel.Controls.Add(this.labelName1);
@@ -265,10 +294,9 @@
             this.labelDateTime1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.labelDateTime1.Location = new System.Drawing.Point(68, 4);
             this.labelDateTime1.Name = "labelDateTime1";
-            this.labelDateTime1.Size = new System.Drawing.Size(61, 13);
+            this.labelDateTime1.Size = new System.Drawing.Size(91, 13);
             this.labelDateTime1.TabIndex = 19;
-            this.labelDateTime1.Text = "02.11.2022";
-            this.labelDateTime1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelDateTime1.Text = "02.11.2022 11:00";
             this.labelDateTime1.Click += new System.EventHandler(this.summaryPanel_Click);
             // 
             // labelName1
@@ -295,7 +323,7 @@
             this.detailPanel.Location = new System.Drawing.Point(0, 35);
             this.detailPanel.Margin = new System.Windows.Forms.Padding(0);
             this.detailPanel.Name = "detailPanel";
-            this.detailPanel.Size = new System.Drawing.Size(150, 176);
+            this.detailPanel.Size = new System.Drawing.Size(150, 203);
             this.detailPanel.TabIndex = 28;
             this.detailPanel.Click += new System.EventHandler(this.detailPanel_Click);
             // 
@@ -309,7 +337,7 @@
             this.flowLayoutPart1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPart1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPart1.Name = "flowLayoutPart1";
-            this.flowLayoutPart1.Size = new System.Drawing.Size(150, 89);
+            this.flowLayoutPart1.Size = new System.Drawing.Size(150, 116);
             this.flowLayoutPart1.TabIndex = 28;
             this.flowLayoutPart1.Click += new System.EventHandler(this.detailPanel_Click);
             // 
@@ -319,7 +347,7 @@
             this.flowLayoutPart2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPart2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPart2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPart2.Location = new System.Drawing.Point(2, 89);
+            this.flowLayoutPart2.Location = new System.Drawing.Point(2, 116);
             this.flowLayoutPart2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.flowLayoutPart2.Name = "flowLayoutPart2";
             this.flowLayoutPart2.Size = new System.Drawing.Size(146, 0);
@@ -332,7 +360,7 @@
             this.flowLayoutPart3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPart3.Controls.Add(this.group3);
             this.flowLayoutPart3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPart3.Location = new System.Drawing.Point(0, 89);
+            this.flowLayoutPart3.Location = new System.Drawing.Point(0, 116);
             this.flowLayoutPart3.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPart3.Name = "flowLayoutPart3";
             this.flowLayoutPart3.Size = new System.Drawing.Size(150, 87);
@@ -481,6 +509,18 @@
             this.buttonStress.UseVisualStyleBackColor = false;
             this.buttonStress.Click += new System.EventHandler(this.buttonStress_Click);
             // 
+            // labelPeople1
+            // 
+            this.labelPeople1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPeople1.AutoSize = true;
+            this.labelPeople1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelPeople1.Location = new System.Drawing.Point(69, 21);
+            this.labelPeople1.Name = "labelPeople1";
+            this.labelPeople1.Size = new System.Drawing.Size(57, 13);
+            this.labelPeople1.TabIndex = 31;
+            this.labelPeople1.Text = "2 persons";
+            // 
             // TicketItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,7 +532,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TicketItem";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(150, 211);
+            this.Size = new System.Drawing.Size(150, 238);
             this.group1.ResumeLayout(false);
             this.group1.PerformLayout();
             this.flowLayoutPanel_Root.ResumeLayout(false);
@@ -542,5 +582,8 @@
         private System.Windows.Forms.Button buttonPrintAsBeauty;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPart2;
         private System.Windows.Forms.Button buttonPrintAsTicket;
+        private System.Windows.Forms.Label labelPeopleTitle;
+        private System.Windows.Forms.Label labelPeople;
+        private System.Windows.Forms.Label labelPeople1;
     }
 }

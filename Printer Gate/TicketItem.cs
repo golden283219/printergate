@@ -34,7 +34,18 @@ namespace PrinterGateXP
             labelDateTimeTitle.Text = Localization.Translation("date_time") + ":";
             labelNameTitle.Text = Localization.Translation("name") + ":";
             labelPhoneTitle.Text = Localization.Translation("phone") + ":"; 
-            labelEmailTitle.Text = Localization.Translation("email") + ":"; 
+            labelEmailTitle.Text = Localization.Translation("email") + ":";
+            if (this.order.orderType == OrderType.Table)
+            {
+                labelPeopleTitle.Text = Localization.Translation("persons") + ":";
+            }
+
+            else
+            {
+                labelPeopleTitle.Text = "";
+            }
+                
+
             labelStatusTitle.Text = Localization.Translation("status") + ":"; 
             labelPrintedTitle.Text = Localization.Translation("printed") + ":";
             if (!isImageButton)
@@ -89,11 +100,13 @@ namespace PrinterGateXP
 			this.labelName.Text = order.name;
             this.labelPhone.Text = order.phone;
             this.labelEmail.Text = order.email;
+            this.labelPeople.Text = order.people;
+            
             this.labelStatus.Text = Utils.OrderStatusName(order.status);
             this.labelPrinted.Text = Utils.PrinttedResultName(order.printStatus);
             //this.labelDateTime.Text = Utils.UnixTimeStampToDateTime(order.date).ToString("dd.MM.yyyy\nH:mm");
             //this.labelDateTime.Text = order.order_date.Replace(' ', '\n');
-            this.labelDateTime.Text = Utils.UnixTimeStampToDateTime(order.date_checkin).ToString("dd.MM.yyyy\nH:mm");
+            this.labelDateTime.Text = Utils.UnixTimeStampToDateTime(order.date_checkin).ToString("dd.MM.yyyy H:mm");
             this.buttonConfirm.Enabled = (order.status == OrderStatus.Pending);
             this.buttonReject.Enabled = (order.status == OrderStatus.Pending);
             this.buttonSend.Enabled = !order.welcomeMessageSent;
@@ -178,9 +191,18 @@ namespace PrinterGateXP
             }
             //---- summary
             this.labelName1.Text = order.name;
+            if(order.orderType == OrderType.Table)
+            {
+                this.labelPeople1.Text = order.people + " " + Localization.Translation("persons");
+            }
+            else
+            {
+                this.labelPeople1.Text = "";
+            }
+            
             //this.labelDateTime1.Text = Utils.UnixTimeStampToDateTime(order.date).ToString("dd.MM.yyyy\nH:mm");
             //this.labelDateTime1.Text = order.order_date.Replace(' ', '\n');
-            this.labelDateTime1.Text = Utils.UnixTimeStampToDateTime(order.date_checkin).ToString("dd.MM.yyyy\nH:mm");
+            this.labelDateTime1.Text = Utils.UnixTimeStampToDateTime(order.date_checkin).ToString("dd.MM.yyyy H:mm");
             this.order = order;
             Localize();
             this.UpdateBackground();
@@ -354,6 +376,14 @@ namespace PrinterGateXP
             }
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
